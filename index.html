@@ -7,13 +7,21 @@
 			Your Career in Web Development Starts Here | The Odin Project
 		</title>
 		<link rel="stylesheet" href="css/custom.css" />
+		<script
+			src="https://kit.fontawesome.com/1b41e66b73.js"
+			crossorigin="anonymous"
+		></script>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Skranji&display=swap"
+			rel="stylesheet"
+		/>
 	</head>
 	<body>
 		<div class="container">
 			<div
 				class="navbar d-flex narrow-width justify-content-space-between"
 			>
-				<a href="#" class="d-flex align-items-center"
+				<a href="#" class="logo d-flex align-items-center"
 					><img
 						src="imgs/odin-logo-2d729f16279e9fc3b58ce847eacf07f883bdfc95eb23bb5064ed59d36ef551d6.svg"
 						alt="The Odin Project Logo."
@@ -25,7 +33,7 @@
 						<li><a href="#">All Paths</a></li>
 						<li><a href="#">Community</a></li>
 						<li><a href="#">About</a></li>
-						<li><a href="#">FAQ</a></li>
+						<li class="border"><a href="#">FAQ</a></li>
 					</ul>
 					<ul class="d-flex">
 						<li><a href="#">Sign Up</a></li>
@@ -33,7 +41,6 @@
 					</ul>
 				</nav>
 			</div>
-			<div class="homepage">homepage</div>
 			<div class="header narrow-width text-align-center">
 				<h1>
 					Your Career in Web Development Starts Here
@@ -42,7 +49,7 @@
 					Our full stack curriculum is free and supported by a
 					passionante open source community.
 				</p>
-				<a href="#" class="button">View Full Curriculum</a>
+				<a href="#" class="button blue-button">View Full Curriculum</a>
 			</div>
 			<!-- /.header -->
 			<div class="hero-container full-width">
@@ -54,7 +61,7 @@
 			</div>
 			<!-- /.hero-container -->
 			<div class="how-it-works full-width text-align-center">
-				<h2>how it works</h2>
+				<h2 class="heading">How it works</h2>
 				<p>
 					This is the website we wish we had when we were learning on
 					our own. We scour the internet looking for only the best
@@ -62,28 +69,30 @@
 					logical order.
 				</p>
 				<div
-					class="how-it-works-tiles w-100 d-flex justify-content-center"
+					class="how-it-works-tiles d-flex justify-content-center w-100"
 				>
 					<div class="tile">
 						<img
 							src="imgs/img-learn-c9dd803d51c0b36d2b47f71937926d3b65e9301ccce1750a3ec84bdde2107430.svg"
 							alt=""
 						/>
-						<h4>Learn</h4>
 						<div class="description">
+							<h4 class="heading">Learn</h4>
 							<p>
 								Learn from a curriculum with the best curated
 								online tutorials, blogs, and courses.
 							</p>
 						</div>
 					</div>
+					<!-- /.tile -->
 					<div class="tile">
 						<img
 							src="imgs/img-build-082f990452c496b27032ee681f9416c1aa563f35f26ca0f0ced71480204974c4.svg"
 							alt=""
 						/>
-						<h4>Build</h4>
 						<div class="description">
+							<h4 class="heading">Build</h4>
+
 							<p>
 								Build dozens of portfolio-worthy projects along
 								the way, from simple scripts to full programs
@@ -91,13 +100,14 @@
 							</p>
 						</div>
 					</div>
+					<!-- /.tile -->
 					<div class="tile">
 						<img
 							src="imgs/img-connect-08d890b9f4e21d5e4a816412d7db4576250a1fcd294628060202637e1cc976d9.svg"
 							alt=""
 						/>
-						<h4>Connect</h4>
 						<div class="description">
+							<h4 class="heading">Connect</h4>
 							<p>
 								You’re not alone. Learn and get help from our
 								friendly community of beginner and experienced
@@ -105,18 +115,220 @@
 							</p>
 						</div>
 					</div>
+					<!-- /.tile -->
 				</div>
 				<!-- /.how-it-works-tiles -->
 			</div>
 			<!-- /.how-it-works -->
 			<div class="curriculum-details full-width text-align-center">
-				<h2>
+				<h2 class="heading">
 					Learn everything you need to know to become a web developer
 				</h2>
+				<div class="curriculum-badges full-width">
+					<div class="badge">
+						<a href="#">
+							<img
+								src="imgs/badge-html-css-f0cd817affb9c40014c8fee177bc60602fc19dbe36c7403c39db7591a3fbfae0.svg"
+								alt=""
+							/>
+							<h4 class="heading">HTML + CSS</h4>
+						</a>
+					</div>
+					<div class="badge">
+						<a href="#"
+							><img
+								src="imgs/badge-javascript-152783091981ef6200dfd5b2a331e600f022b1aecca5d93d6527a2da41ea8973.svg"
+								alt=""
+							/>
+							<h4 class="heading">JAVASCRIPT</h4></a
+						>
+					</div>
+					<div class="badge">
+						<a href="#"
+							><img
+								src="imgs/badge-git-02d0a9f9704bede249c80b9ebc2e1dd95ae5b3cd7118ac6f2e325892513fa021.svg"
+								alt=""
+							/>
+							<h4 class="heading">GIT</h4>
+						</a>
+					</div>
+				</div>
+				<!-- /curriculum-badges row1 -->
+				<div class="curriculum-badges full-width">
+					<div class="badge">
+						<a href="#">
+							<img
+								src="imgs/badge-database-ab04cd637b9dd1bd35efaed2c4e6d81d772242b4eb3054a5cc1240e9df6214ef.svg"
+								alt=""
+							/>
+							<h4 class="heading">DATABASES</h4>
+						</a>
+					</div>
+					<div class="badge">
+						<a href="#">
+							<img
+								src="imgs/badge-ruby-fd7899feb349ca40b25c5962402b0af43b9c5025630918642b230b9b58533a1c.svg"
+								alt=""
+							/>
+							<h4 class="heading">RUBY</h4>
+						</a>
+					</div>
+					<div class="badge">
+						<a href="#">
+							<img
+								src="imgs/badge-ruby-on-rails-091ce34e6c08a22d1d64365955f7d8c7e39b7339828b7cf472afee44ad144ace.svg"
+								alt=""
+							/>
+							<h4 class="heading">RUBY ON RAILS</h4>
+						</a>
+					</div>
+				</div>
+				<!-- /.curriculum-badges row2 -->
+				<div class="curriculum-badges full-width">
+					<div class="badge">
+						<a href="#">
+							<img
+								src="imgs/badge-nodejs-48163fa5a0f0fb693db213ab110f63ca51e1ff18f88748572978f85989a1a5fe.svg"
+								alt=""
+							/>
+							<h4 class="heading">NODEJS</h4>
+						</a>
+					</div>
+					<div class="badge">
+						<a href="#">
+							<img
+								src="imgs/badge-getting-hired-f1f20b847141831a133bf9e9737e1f3d9b8e740e649ee7fe616e900dd57f89d3.svg"
+								alt=""
+							/>
+							<h4 class="heading">GETTING HIRED</h4>
+						</a>
+					</div>
+				</div>
+				<!-- /.curriculum-badges row3 -->
+				<div class="get-started text-align-center">
+					<a href="#" class="button orange-button">Get Started</a>
+				</div>
 			</div>
-			<div class="success-stories">success stories</div>
-			<footer>footer</footer>
-			<div class="floating-dropdown"></div>
+			<!-- /.curriculum-details -->
+			<div class="success-stories full-width text-align-center">
+				<h2 class="heading">Success Stories</h2>
+				<div class="success-stories-container narrow-width">
+					<div class="success-story">
+						<img
+							src="imgs/story/rob_pando-f2194968f4016acc8e645d4f28f34556e5a2e835a671df54003b6e2b53a432a2.jpg"
+							alt=""
+						/>
+						<div class="story">
+							<a href="#" class="success-story-link">Rob Pando</a>
+							<p>
+								TOP was a perfect match for my learning style.
+								Not walking me through an entire project but
+								actually forcing me to figure it out on my own,
+								by pointing me...
+							</p>
+						</div>
+					</div>
+					<div class="success-story">
+						<img
+							src="imgs/story/olivia-29778ae767170b399ce62a5adf68e71ad31801b2afa9aa085cadd9fb6cfb8048.jpg"
+							alt=""
+						/>
+						<div class="story">
+							<a href="#" class="success-story-link">Olivia</a>
+							<p>
+								Before I found TOP, I was jumping from Coursera
+								course to Coursera course without really any
+								guidance or community. I wanted to get a real
+								development job and not operating...
+							</p>
+						</div>
+					</div>
+					<div class="success-story">
+						<img
+							src="imgs/story/cody_loyd-d1eeea3e2c11372cbb52cb976b0263cc8d380d67fdd64615705cda022736feaa.jpg"
+							alt=""
+						/>
+						<div class="story">
+							<a href="#" class="success-story-link">Cody Loyd</a>
+							<p>
+								Before I started the Odin Project I had
+								literally ZERO programming experience. After
+								almost exactly a year of working through the
+								program, I was offered a job as a front...
+							</p>
+						</div>
+					</div>
+					<div class="success-story">
+						<img
+							src="imgs/story/william_kennedy-f7f9b22c511f24eb5ec113f094314b2e1625a9f84ac361ca789d4d4858df5a04.jpg"
+							alt=""
+						/>
+						<div class="story">
+							<a href="#" class="success-story-link"
+								>William Kennedy</a
+							>
+							<p>
+								The Odin Project changed my life and that is not
+								an understatement. In November 2013, I made a
+								commitment to myself to become a self-taught
+								developer so I threw myself...
+							</p>
+						</div>
+					</div>
+				</div>
+				<!-- /.success-stories-container -->
+				<div class="success-stories-read-more">
+					<a href="#">Read more success stories</a>
+				</div>
+				<div class="bottom-cta">
+					<div class="bottom-cta-heading">
+						<p>Start learning for free now!</p>
+					</div>
+					<div class="bottom-cta-button">
+						<a href="#" class="button blue-button">Sign Up</a>
+					</div>
+				</div>
+			</div>
+			<footer
+				class="narrow-width d-flex justify-content-space-between align-items-center"
+			>
+				<a href="#" class="logo d-flex align-items-center"
+					><img
+						src="imgs/odin-logo-2d729f16279e9fc3b58ce847eacf07f883bdfc95eb23bb5064ed59d36ef551d6.svg"
+						alt="The Odin Project Logo."
+					/>
+					<span class="logo-text">The Odin Project</span>
+				</a>
+				<ul class="social-links d-flex">
+					<li>
+						<a href="#"><i class="fab fa-github"></i></a>
+					</li>
+					<li>
+						<a href="#"><i class="fab fa-discord"></i></a>
+					</li>
+					<li>
+						<a href="#"><i class="fab fa-facebook"></i></a>
+					</li>
+					<li>
+						<a href="#"><i class="fab fa-twitter"></i></a>
+					</li>
+				</ul>
+				<div class="internal-links-container d-flex">
+					<ul class="internal-links">
+						<li><a href="#">About</a></li>
+						<li><a href="#">FAQ</a></li>
+						<li><a href="#">Blog</a></li>
+					</ul>
+					<ul class="internal-links">
+						<li><a href="#">Success Stories</a></li>
+						<li><a href="#">Contribute</a></li>
+						<li><a href="#">Terms of Use</a></li>
+					</ul>
+				</div>
+			</footer>
+			<div class="floating-dropdown">
+				<a href="#"><i class="fas fa-comments"></i></a>
+			</div>
 		</div>
 	</body>
 </html>
