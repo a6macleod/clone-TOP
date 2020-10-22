@@ -46,6 +46,12 @@ nav {
 	}
 }
 
+@media (max-width: 768px) {
+	nav {
+		flex-direction: column;
+	}
+}
+
 .header {
 	margin-top: 100px;
 	margin-bottom: 100px;
@@ -96,6 +102,27 @@ nav {
 		h4 {
 			font-weight: bold;
 		}
+	}
+}
+
+@media (max-width: 1199px) {
+	.how-it-works-tiles {
+		.tile {
+			margin: 0 25px;
+		}
+	}
+}
+
+@media (max-width: 850px) {
+	.how-it-works-tiles {
+		.tile {
+			margin: 0 15px;
+		}
+	}
+}
+@media (max-width: 768px) {
+	.how-it-works-tiles {
+		flex-wrap: wrap;
 	}
 }
 
@@ -246,7 +273,7 @@ footer {
 		color: $orange;
 		font-size: 2em;
 		padding: 5px;
-		margin: 30px;
+		margin: 20px;
 	}
 	i:hover {
 		color: #000;
@@ -270,10 +297,46 @@ footer {
 	}
 }
 
+@media (max-width: 1199px) {
+	.social-links {
+		i {
+			margin: 10px;
+		}
+	}
+	.internal-links {
+		margin: 0 20px;
+	}
+}
+
+@media (max-width: 850px) {
+	footer {
+		justify-content: space-around;
+	}
+	.social-links {
+		// flex-direction: column;
+		i {
+			font-size: 1.5em;
+			padding: 5px;
+			margin: 15px;
+		}
+	}
+	.internal-links {
+		margin: 10px;
+	}
+}
+
+@media (max-width: 768px) {
+	footer {
+		.logo {
+			display: none;
+		}
+	}
+}
+
 .floating-dropdown {
 	position: fixed;
-	bottom: 70px;
-	right: 30px;
+	bottom: 15px;
+	right: 15px;
 	width: 75px;
 	height: 75px;
 	border-radius: 50%;
