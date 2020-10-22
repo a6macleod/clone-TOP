@@ -121,6 +121,9 @@ nav {
 		margin: 1em;
 		background-color: #fff;
 	}
+	a {
+		text-decoration: none;
+	}
 	h4 {
 		margin: 1em;
 	}
@@ -172,6 +175,18 @@ nav {
 	img {
 		width: 60px;
 		border-radius: 100px;
+	}
+}
+
+@media (max-width: 1199px) {
+	.success-stories-container {
+		grid-template-columns: 1fr;
+		// max-width: 600px;
+		grid-gap: 60px;
+		justify-items: center;
+	}
+	.success-story {
+		max-width: 550px;
 	}
 }
 

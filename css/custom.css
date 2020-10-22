@@ -300,6 +300,8 @@ nav a:hover {
     box-shadow: 0 7px 16px 0 rgba(0, 0, 0, 0.05);
     margin: 1em;
     background-color: #fff; }
+  .curriculum-badges a {
+    text-decoration: none; }
   .curriculum-badges h4 {
     margin: 1em; }
   .curriculum-badges img {
@@ -342,6 +344,14 @@ nav a:hover {
     width: 60px;
     border-radius: 100px; }
 
+@media (max-width: 1199px) {
+  .success-stories-container {
+    grid-template-columns: 1fr;
+    grid-gap: 60px;
+    justify-items: center; }
+
+  .success-story {
+    max-width: 550px; } }
 .success-story {
   display: grid;
   grid-template-columns: 1fr 10fr;
